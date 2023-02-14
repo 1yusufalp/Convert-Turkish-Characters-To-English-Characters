@@ -1,0 +1,6 @@
+treng = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosuCGIOSU")
+f = open("metin.txt", "r")
+f1 = open("cevri.txt", "w")
+cevri = f.read().translate(TrEng)
+f1.write(cevri)
+print("Donusum Yapildi")
